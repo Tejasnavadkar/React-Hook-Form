@@ -42,7 +42,7 @@ type FormData = z.infer<typeof formSchema>;
         control, // when we use external library or deal with array fields controller
         getValues, // toget get any field value of form
         setError,
-        watch
+        watch // to monitor field and onchange returned that changed value
 
         } = useForm<FormData>({  // ctrl + space to findout values that returns hook
         defaultValues: {
